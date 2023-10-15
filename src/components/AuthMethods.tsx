@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 interface AuthMethodsProps {
   handleGoogleLogin: () => Promise<void>;
-  handleDiscordLogin: () => Promise<void>;
+  // handleDiscordLogin: () => Promise<void>;
   setView: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const AuthMethods = ({
   handleGoogleLogin,
-  handleDiscordLogin,
+  // handleDiscordLogin,
   setView,
 }: AuthMethodsProps) => {
   return (
@@ -25,7 +25,7 @@ const AuthMethods = ({
             </div>
             <span className="btn__label">Google</span>
           </button>
-          <button
+          {/* <button
             type="button"
             className="btn btn--outline"
             onClick={handleDiscordLogin}
@@ -34,7 +34,7 @@ const AuthMethods = ({
               <Image src="/discord.png" alt="Discord logo" fill={true}></Image>
             </div>
             <span className="btn__label">Discord</span>
-          </button>
+          </button> */}
           {/* <button type="button" className="btn btn--outline">
             <div className="btn__icon">
               <Image src="/apple.png" alt="Apple logo" fill={true}></Image>
@@ -42,7 +42,7 @@ const AuthMethods = ({
             <span className="btn__label">Apple</span>
           </button> */}
         </div>
-        <button
+        {/* <button
           type="button"
           className="btn btn--outline"
           onClick={() => setView('email')}
@@ -63,7 +63,7 @@ const AuthMethods = ({
             </svg>
           </div>
           <span className="btn__label">Continue with email</span>
-        </button>
+        </button> */}
         <button
           type="button"
           className="btn btn--outline"

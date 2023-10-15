@@ -8,7 +8,7 @@ import StytchOTP from './StytchOTP';
 
 interface SignUpProps {
   handleGoogleLogin: () => Promise<void>;
-  handleDiscordLogin: () => Promise<void>;
+  // handleDiscordLogin: () => Promise<void>;
   authWithEthWallet: any;
   authWithOTP: any;
   registerWithWebAuthn: any;
@@ -22,7 +22,7 @@ type AuthView = 'default' | 'email' | 'phone' | 'wallet' | 'webauthn';
 
 export default function SignUpMethods({
   handleGoogleLogin,
-  handleDiscordLogin,
+  // handleDiscordLogin,
   authWithEthWallet,
   authWithOTP,
   registerWithWebAuthn,
@@ -51,7 +51,7 @@ export default function SignUpMethods({
             </p>
             <AuthMethods
               handleGoogleLogin={handleGoogleLogin}
-              handleDiscordLogin={handleDiscordLogin}
+              // handleDiscordLogin={handleDiscordLogin}
               setView={setView}
             />
             <div className="buttons-container">
