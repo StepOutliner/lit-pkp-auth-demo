@@ -47,9 +47,9 @@ export default function SignUpView() {
     await signInWithGoogle(redirectUri);
   }
 
-  async function handleDiscordLogin() {
-    await signInWithDiscord(redirectUri);
-  }
+  // async function handleDiscordLogin() {
+  //   await signInWithDiscord(redirectUri);
+  // }
 
   async function registerWithWebAuthn() {
     const newPKP = await registerWebAuthn();
@@ -96,7 +96,7 @@ export default function SignUpView() {
     return (
       <SignUpMethods
         handleGoogleLogin={handleGoogleLogin}
-        handleDiscordLogin={handleDiscordLogin}
+        // handleDiscordLogin={handleDiscordLogin}
         authWithEthWallet={authWithEthWallet}
         authWithOTP={authWithOTP}
         registerWithWebAuthn={registerWithWebAuthn}

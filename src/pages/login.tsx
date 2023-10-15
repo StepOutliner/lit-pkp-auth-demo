@@ -44,9 +44,9 @@ export default function LoginView() {
     await signInWithGoogle(redirectUri);
   }
 
-  async function handleDiscordLogin() {
-    await signInWithDiscord(redirectUri);
-  }
+  // async function handleDiscordLogin() {
+  //   await signInWithDiscord(redirectUri);
+  // }
 
   function goToSignUp() {
     router.push('/');
@@ -108,7 +108,7 @@ export default function LoginView() {
   return (
     <LoginMethods
       handleGoogleLogin={handleGoogleLogin}
-      handleDiscordLogin={handleDiscordLogin}
+      // handleDiscordLogin={handleDiscordLogin}
       authWithEthWallet={authWithEthWallet}
       authWithOTP={authWithOTP}
       authWithWebAuthn={authWithWebAuthn}

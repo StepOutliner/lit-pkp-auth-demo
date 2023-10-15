@@ -8,7 +8,7 @@ import StytchOTP from './StytchOTP';
 
 interface LoginProps {
   handleGoogleLogin: () => Promise<void>;
-  handleDiscordLogin: () => Promise<void>;
+  // handleDiscordLogin: () => Promise<void>;
   authWithEthWallet: any;
   authWithOTP: any;
   authWithWebAuthn: any;
@@ -21,7 +21,7 @@ type AuthView = 'default' | 'email' | 'phone' | 'wallet' | 'webauthn';
 
 export default function LoginMethods({
   handleGoogleLogin,
-  handleDiscordLogin,
+  // handleDiscordLogin,
   authWithEthWallet,
   authWithOTP,
   authWithWebAuthn,
@@ -45,7 +45,7 @@ export default function LoginMethods({
             <p>Access your Lit wallet.</p>
             <AuthMethods
               handleGoogleLogin={handleGoogleLogin}
-              handleDiscordLogin={handleDiscordLogin}
+              // handleDiscordLogin={handleDiscordLogin}
               setView={setView}
             />
             <div className="buttons-container">
